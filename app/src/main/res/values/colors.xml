@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#03bafc</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="red">#ef5350</color>
+    <color name="red_dark">#d43c3c</color>
+    <color name="yellow_back">#ccc9ae</color>
+    <color name="light_yellow">#fffdeb</color>
+    <color name="yellow_search">#faf3b1</color>
+    <color name="yellow">#ffee58</color>
+    <color name="yellow_dark">#ffeb3b</color>
+    <color name="lime">#d3e23c</color>
+    <color name="lime_dark">#9dbf35</color>
+    <color name="light_green">#f8fcd2</color>
+    <color name="green">#66bb6a</color>
+    <color name="green_dark">#36b957</color>
+    <color name="light_blue">#d2f6fa</color>
+    <color name="blue">#4dd0e1</color>
+    <color name="blue_dark">#2ecdfd</color>
+    <color name="green_email">#b6e1bd</color>
+    <color name="bckgrnd_colour_signup">#a7dde7</color>
+    <color name="back_to_login">#137934</color>
+    <color name="darkblue">#5A9CEE</color>
+    <color name="darkblue_dark">#417eca</color>
+    <color name="darkviolet">#7E50F1</color>
+    <color name="darkviolet_dark">#683dd4</color>
+    <color name="violet">#D65AEE</color>
+    <color name="violet_dark">#b33ec9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_pink">#faccdc</color>
+    <color name="pinklight">#ff80ab</color>
+    <color name="pink_dark">#f94b85</color>
+
+    <color name="forgot">#03bafc</color>
+    <color name="back_blue">#dbf1fa</color>
+
+    <color name="mb_white">#ffffff</color>
+    <color name="mb_blue">#ff0099cc</color>
+    <color name="mb_blue_dark">#ff00719b</color>
+    <color name="mb_purple">#ffaa66cc</color>
+    <color name="mb_purple_dark">#ff8855aa</color>
+    <color name="mb_green">#ff99cc00</color>
+    <color name="mb_green_dark">#ff6d9b00</color>
+    <color name="mb_red">#ffff4444</color>
+    <color name="mb_red_dark">#ffcd3a3a</color>
+    <color name="mb_gray">#ffdedede</color>
+
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_red_light">#ffff4444</color>
+
+    <color name="m_red">#ff7171</color>
+    <color name="m_green">#37ff00</color>
+    <color name="m_orange">#f2de77</color>
+    <color name="m_pink">#ff8ff6</color>
+    <color name="m_blue">#03eefa</color>
+    <color name="m_violet">#04ff9b</color>
+    <color name="m_yellow">#eadb38</color>
+
+    <color name="from">#000000</color>
+    <color name="subject">#111111</color>
+    <color name="timestamp">#4285f4</color>
+    <color name="message">#7a7a7a</color>
+    <color name="icon_tint_normal">#7a7a7a</color>
+    <color name="icon_tint_selected">#fed776</color>
+    <color name="row_activated">#e0e0e0</color>
+    <color name="bg_action_mode">#757575</color>
+    <color name="bg_circle_default">#666666</color>
+</resources>

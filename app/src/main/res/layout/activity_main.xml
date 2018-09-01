@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/back_blue"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.CardView
+        style="@style/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:backgroundTint="@color/blue_dark"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="4dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/attendanceicon"
+                android:layout_width="50dp"
+                android:layout_height="57dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/attendance"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:onClick="openannouncement"
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:minHeight="65dp"
+                android:text="ATTENDANCE"
+                android:textColor="@color/white"
+                android:textSize="33sp"
+                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/attendanceicon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.dd.morphingbutton.MorphingButton
+                android:id="@+id/button"
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/yellow_back"
+                android:text="Take attendance"
+                android:textColor="@color/default_bmb_shareLine1Color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:background="@color/light_yellow"
+                android:id="@+id/textView2"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="4dp"
+                android:text="Total present"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button2"
+                app:layout_constraintStart_toEndOf="@+id/button" />
+
+            <com.dd.morphingbutton.MorphingButton
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="12dp"
+                android:backgroundTint="@color/yellow_back"
+                android:text="edit"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="4dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toTopOf="@+id/divider2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        style="@style/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:backgroundTint="@color/blue_dark"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="4dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/timetableicon"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/ic_perm_contact_calendar_black_24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/blue_dark"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/recycle_timetable"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/timetableicon"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:onClick="opentimetable"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="TIME TABLE"
+                    android:textColor="@color/light_green"
+                    android:textSize="33sp" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_timetable"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="@color/blue"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        style="@style/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="4dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue_dark">
+
+            <LinearLayout
+                android:focusable="true"
+                android:clickable="true"
+                android:onClick="opennotification"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="66dp"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/ic_notifications_black_24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="notification"
+                    android:textAllCaps="true"
+                    android:textColor="@color/light_blue"
+                    android:textSize="33dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="@color/forgot"
+                android:paddingLeft="8dp"
+                android:text="See your notification"
+                android:textColor="@color/light_blue"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        style="@style/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardCornerRadius="2dp"
+        android:layout_marginBottom="0dp"
+        app:cardElevation="4dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue_dark">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/annoucementdetail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_margin="4dp"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/announcement" />
+
+                <TextView
+                    android:onClick="openattendace"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="announcement"
+                    android:textAllCaps="true"
+                    android:textColor="@color/light_pink"
+                    android:textSize="33dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/annoucementdetail"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="@color/forgot"
+                android:paddingLeft="8dp"
+                android:text="Announce some imformation"
+                android:textColor="@color/light_pink"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:layout_gravity="end"
+        android:id="@+id/bmb"
+        app:bmb_normalColor="@color/forgot"
+        app:bmb_buttonEnum="ham"
+        app:bmb_piecePlaceEnum="piecePlace_ham_6"
+        app:bmb_buttonPlaceEnum="buttonPlace_ham_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <!--<ImageView-->
+            <!--android:padding="7dp"-->
+            <!--android:src="@drawable/donut"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+    </com.nightonke.boommenu.BoomMenuButton>
+
+</LinearLayout>
